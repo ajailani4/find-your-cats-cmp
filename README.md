@@ -1,14 +1,19 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# Find Your Cats
+Find Your Cats is a multiplatform app that can be used to find cats. Currently this app is only available on Android and iOS. This repo is Compose Multiplatform version. If you want to take a look of Kotlin Multiplatform and native UI on both platform, you can go through this repo (https://github.com/ajailani4/find-your-cats)
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+## Architecture
+This app implements layered architecture which has 2 layers (data layer and presentation layer both shared across the platforms).
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## Tech Stack and Libraries
+- Kotlin
+- Kotlin Multiplatform
+- Compose Multiplatform
+- Koin
+- Flow
+- Coroutines
+- Ktor Client
+- Kotlin Serialization
+- Coil
 
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## Preview
+https://github.com/user-attachments/assets/d27e201f-a4f0-4a76-af07-7802ca424f5b
