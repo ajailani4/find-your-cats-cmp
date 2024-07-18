@@ -44,14 +44,22 @@ kotlin {
             implementation(compose.foundation)
             implementation(compose.material)
             implementation(compose.ui)
+            implementation(compose.materialIconsExtended)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
-
-//            implementation(libs.coil.compose)
+            implementation(libs.lifecycle.viewmodel)
+            implementation(libs.navigation.compose)
 
             // Koin
             implementation(project.dependencies.platform(libs.koin.bom))
             implementation(libs.koin.core)
+            implementation(libs.koin.compose)
+
+            // Coil
+            implementation(libs.coil.compose)
+            implementation(libs.coil.compose.core)
+            implementation(libs.coil.network.ktor)
+            implementation(libs.coil.mp)
 
             // Ktor
             implementation(libs.ktor.client.core)

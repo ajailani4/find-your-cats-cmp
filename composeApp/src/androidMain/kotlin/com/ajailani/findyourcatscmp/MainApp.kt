@@ -6,6 +6,6 @@ import com.ajailani.findyourcatscmp.di.KoinInitializer
 class MainApp : Application() {
     override fun onCreate() {
         super.onCreate()
-        KoinInitializer(applicationContext).init()
+        KoinInitializer(this@MainApp).init()
     }
 }
