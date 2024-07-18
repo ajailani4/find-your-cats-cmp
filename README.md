@@ -16,4 +16,4 @@ This app implements layered architecture which has 2 layers (data layer and pres
 - Coil
 
 ## Preview
-https://github.com/user-attachments/assets/d27e201f-a4f0-4a76-af07-7802ca424f5b
+https://github.com/user-attachments/assets/b8e4a420-e86c-44ac-b6d1-8187b05a7749
